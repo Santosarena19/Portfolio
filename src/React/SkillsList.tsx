@@ -37,20 +37,24 @@ const SkillsList = () => {
   const [openItem, setOpenItem] = useState<string | null>(null);
 
   const skills = {
-    "Web Development": [
-      "Single Page Applications (SPAs)",
-      "Landing pages and business websites",
-      "Portfolio websites",
+    "Web Development & Programming": [
+    "Single Page Applications (SPAs)",
+    "Landing pages and business websites",
+    "Portfolio websites",
+    "Development with WordPress",
+    "E-commerce systems",
     ],
-    "Mobile Development": [
-      "Mobile-friendly web apps",
-      "React Native mobile apps",
+    "Manual Testing (QA Testing)": [
+      "Design and execution of test cases",
+      "Bug detection and documentation",
+      "Regression testing and functionality verification",
     ],
-    "UI/UX Design & Prototyping": [
-      "UI design with Figma & Canva",
-      "UX research & improvements",
-      "Prototyping for websites & mobile apps",
+    "UI/UX Design and Prototyping": [
+      "UI design with Figma and Canva",
+      "UX research and improvement",
+      "Prototyping for websites and mobile apps",
     ],
+
   };
 
   const toggleItem = (item: string) => {
