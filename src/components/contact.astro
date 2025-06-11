@@ -1,53 +1,73 @@
-<form
-  name="contact"
-  method="POST"
-  data-netlify="true"
-  netlify-honeypot="bot-field"
-  class="max-w-xl mx-auto bg-[#1414149c] text-white p-6 rounded-xl space-y-4 border border-[var(--white-icon-tr)]"
->
-  <!-- Campo oculto para Netlify Bot -->
-  <input type="hidden" name="form-name" value="contact" />
-  <p class="hidden">
-    <label>Don’t fill this out: <input name="bot-field" /></label>
-  </p>
 
-  <div>
-    <label for="name" class="block text-sm font-semibold mb-1">Nombre</label>
-    <input
-      type="text"
-      id="name"
-      name="name"
-      required
-      class="w-full px-4 py-2 rounded-lg bg-[#1a1a1a] border border-gray-600 focus:outline-none focus:border-[var(--sec)]"
-    />
+
+<section class="w-full px-4 py-12 bg-[#0d0d0d] text-white">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+
+    <!-- Columna izquierda: Información -->
+    <div class="flex flex-col justify-center space-y-4 p-6 bg-[#1414149c] rounded-xl border border-[var(--white-icon-tr)] shadow-md">
+      <h2 class="text-3xl font-bold mb-2">Let's talk</h2>
+      <h3 class="text-xl font-semibold mb-2">Contact</h3>
+      <p class="text-gray-300">
+        Have a question or a project in mind? Feel free to reach out.
+      </p>
+      <p class="text-sm text-gray-400">Location: <strong>Argentina, Formosa</strong></p>
+    </div>
+
+    <!-- Columna derecha: Formulario -->
+    <div>
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        class="max-w-xl mx-auto bg-[#1414149c] text-white p-6 rounded-xl space-y-4 border border-[var(--white-icon-tr)]"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="hidden">
+          <label>Don’t fill this out: <input name="bot-field" /></label>
+        </p>
+
+        <div>
+          <label for="name" class="block text-sm font-semibold mb-1">Nombre</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="w-full px-4 py-2 rounded-lg bg-[#1a1a1a] border border-gray-600 focus:outline-none focus:border-[var(--sec)]"
+          />
+        </div>
+
+        <div>
+          <label for="email" class="block text-sm font-semibold mb-1">Correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="w-full px-4 py-2 rounded-lg bg-[#1a1a1a] border border-gray-600 focus:outline-none focus:border-[var(--sec)]"
+          />
+        </div>
+
+        <div>
+          <label for="message" class="block text-sm font-semibold mb-1">Mensaje</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            class="w-full px-4 py-2 rounded-lg bg-[#1a1a1a] border border-gray-600 focus:outline-none focus:border-[var(--sec)]"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-[var(--sec)] hover:bg-[var(--sec-hover)] text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300"
+        >
+          Enviar mensaje
+        </button>
+      </form>
+    </div>
+
   </div>
-
-  <div>
-    <label for="email" class="block text-sm font-semibold mb-1">Correo electrónico</label>
-    <input
-      type="email"
-      id="email"
-      name="email"
-      required
-      class="w-full px-4 py-2 rounded-lg bg-[#1a1a1a] border border-gray-600 focus:outline-none focus:border-[var(--sec)]"
-    />
-  </div>
-
-  <div>
-    <label for="message" class="block text-sm font-semibold mb-1">Mensaje</label>
-    <textarea
-      id="message"
-      name="message"
-      rows="5"
-      required
-      class="w-full px-4 py-2 rounded-lg bg-[#1a1a1a] border border-gray-600 focus:outline-none focus:border-[var(--sec)]"
-    ></textarea>
-  </div>
-
-  <button
-    type="submit"
-    class="w-full bg-[var(--sec)] hover:bg-[var(--sec-hover)] text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300"
-  >
-    Enviar mensaje
-  </button>
-</form>
+</section>
